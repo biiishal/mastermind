@@ -1,7 +1,7 @@
-require "./mastermind/version"
+require "mastermind/version"
 
-%w().each do |file|
-  require_relative "./tic_tac_toe/#{file}.rb"
+%w(row core_extensions).each do |file|
+  require_relative "./mastermind/#{file}.rb"
 end
 
 module Mastermind
