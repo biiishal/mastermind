@@ -5,12 +5,16 @@
 module Mastermind
 
   class Row
-    attr_accessor :slots
+    attr_accessor :slots, :indicator
 
     def initialize
       @slots = ["", "", "", ""]
+      @indicator = Indicator.new
     end
 
+    def update_indicator(values=[])
+      @indicator.values = values
+    end
   end
 
 end
