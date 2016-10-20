@@ -23,8 +23,7 @@ module Mastermind
     end
 
     def play
-      puts "Do you want to play or set winning combination?\
-            Enter 1 to play, 2 to set combination:"
+      puts "Do you want to play or set winning combination?\nEnter 1 to play, 2 to set combination:"
       choice = gets.chomp
       if choice == "1"
         @board.winning_combination = @board.random_combination
@@ -56,9 +55,9 @@ module Mastermind
         "3" => "yellow",
         "4" => "blue",
         "5" => "magenta",
-        "6" => "cyan",
+        "6" => "light_red",
         "7" => "purple",
-        "8" => "white"
+        "8" => "neon"
       }
       human_choices.map { |choice| mapping[choice] }
     end
@@ -72,7 +71,7 @@ module Mastermind
     # end
 
     def winning_message
-      "Wow! all combinations match. You've won the fucking game."
+      "Wow! all combinations match. Congratulations!! You've won the fucking game."
     end
   end
 

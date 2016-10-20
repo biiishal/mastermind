@@ -29,10 +29,11 @@ module Mastermind
           when :exact_match
             print " #{@@colors[:red]} #{@@small_dot_code}"
           else
-            print " #{@@light_grey} #{@@small_dot_code}"
+            print " #{@@grey} #{@@small_dot_code}"
           end
         end
         puts "#{@@default_color}"
+        puts " "
       end
     end
 
@@ -53,15 +54,15 @@ module Mastermind
     end
 
 
-    @@colors = { red: "\e[31m",
-                 green: "\e[32m",
-                 yellow: "\e[33m",
-                 blue: "\e[34m",
-                 magenta: "\e[1;35m",
-                 cyan: "\e[36m",
-                 purple: "\e[0;35m",
-                 white: "\e[97m"}
-    @@light_grey = "\e[37m"
+    @@colors = { red: "\e[38;5;1m",
+                 green: "\e[38;5;28m",
+                 yellow: "\e[38;5;3m",
+                 blue: "\e[38;5;32m",
+                 magenta: "\e[38;5;68m",
+                 light_red: "\e[38;5;202m",
+                 purple: "\e[38;5;129m",
+                 neon: "\e[38;5;82m"}
+    @@grey = "\e[90m"
     @@default_color = "\e[39m"
     @@dot_code = "\u2b24"
     @@small_dot_code = "\u26ab"
