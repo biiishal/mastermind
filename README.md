@@ -32,7 +32,7 @@ To play this game:
 ##Screenshot
 
 ![Screenshot]
-(https://github.com/biiishal/mastermind/images/screenshot.png)
+(https://github.com/biiishal/mastermind/blob/master/images/screenshot.png)
 
 ## Development
 
